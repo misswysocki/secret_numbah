@@ -1,4 +1,4 @@
-require 'pry'
+
 
 def check_users_number
   tries_left = 3 
