@@ -12,7 +12,11 @@ def check_users_number
       break 
     elsif tries_left > 0
       tries_left -=1
-      puts "You guessed wrong, silly. You have #{tries_left} guesses before the game is over enter a another number" if tries_left > 0     
+      if player_guess > random_number
+      puts "You guessed too high, silly! You have #{tries_left} guesses before the game is over enter a another number" if tries_left > 0     
+      else 
+      puts "You guessed too low, silly! You have #{tries_left} guesses before the game is over enter a another number" if tries_left > 0     
+    end
     end
   end 
 end
