@@ -1,5 +1,7 @@
 require 'pry'
 
+#DO NOT CHANGE ANY OF THE SOURCE CODE!
+
 def check_users_number
   # define the number of tries the user has and save it to a variable
   # google how to randomly generate a number between 1-10, save that number to a variable called @random_number
@@ -10,7 +12,7 @@ def check_users_number
       #check to see if the player_guess is equal to the @random_number
         puts "OH MY GAWD YOU GUESSED THE SECRET NUMBAH, #{@random_number}!  YOU WIN!"
         #set a variable called @did_they_win and set it equal to true
-        #google how to stop a while loop
+        break
       #check to see if the player has more tries left 
         tries_left -=1
         #check to see if the player_guess is more than the @random_number
